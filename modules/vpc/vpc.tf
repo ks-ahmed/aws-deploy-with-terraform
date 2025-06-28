@@ -30,7 +30,7 @@ resource "aws_subnet" "public_subnet2" {
 }
 
 resource "aws_subnet" "private_subnet1" {
-  vpc_id     = aws_vpc.this.id
+  vpc_id     = aws_vpc.wordpress_vpc.id
   cidr_block = "10.0.16.0/24"
   availability_zone = "eu-west-2a"
 
@@ -39,7 +39,7 @@ resource "aws_subnet" "private_subnet1" {
   }
 }
 resource "aws_subnet" "private_subnet2" {
-  vpc_id     = aws_vpc.this.id
+  vpc_id     = aws_vpc.wordpress_vpc.id
   cidr_block = "10.0.32.0/24"
   availability_zone = "eu-west-2b"
 
@@ -57,13 +57,6 @@ resource "aws_internet_gateway" "igw" {
     Name = "wordpress-igw"
   }
 }
-
-
-resource "aws_vpc_attachment" "gateway_attachment" { 
-  vpc_id = aws_vpc.wordpress_vpc.id 
-  internet_gateway_id = aws_internet_gateway.igw.id 
-
-} 
 
 resource "aws_eip" "eip" {
   domain = "vpc"

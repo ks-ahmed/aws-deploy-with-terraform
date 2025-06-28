@@ -117,9 +117,9 @@ resource "aws_route_table_association" "private2" {
   route_table_id = aws_route_table.private.id
 }
 
-resource "aws_security_group" "allow_ssh&http" {
-  name        = "allow_ssh&http"
-  description = "Allow SSH&HTTP inbound traffic"
+resource "aws_security_group" "allow_ssh_http" {
+  name        = "allow_ssh_http"
+  description = "Allow SSH and HTTP inbound traffic"
   vpc_id      = aws_vpc.wordpress_vpc.id
 
   ingress {
@@ -147,6 +147,6 @@ resource "aws_security_group" "allow_ssh&http" {
   }
 
   tags = {
-    Name = "allow_ssh&http"
+    Name = "allow_ssh_http"
   }
 }

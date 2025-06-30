@@ -81,12 +81,12 @@ cat <<EOF > /var/www/html/index.html
 <body>
   <h1>🎉 Welcome to VettlyAI!</h1>
   <p>
-    You've successfully deployed a cloud-based infrastructure using <span class="highlight">Terraform</span>, featuring an
+    This site is successfully deployed with a cloud-based infrastructure using <span class="highlight">Terraform</span>, featuring an
     <span class="highlight">EC2 instance</span> for hosting a WordPress application, a managed <span class="highlight">Amazon RDS (MySQL)</span> database, and a secure, scalable
     <span class="highlight">VPC architecture</span> with public/private subnets, a NAT Gateway, and Internet Gateway.
   </p>
   <p>
-    You're now running a real-world, production-ready infrastructure — fully automated and deployed in the cloud! 🌐
+    This site is now running a real-world, production-ready infrastructure — fully automated and deployed in the cloud! 🌐
   </p>
 
   <a class="button" href="/wordpress">Visit WordPress Site</a>

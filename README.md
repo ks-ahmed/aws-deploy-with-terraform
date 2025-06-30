@@ -1,4 +1,4 @@
-# 🚀 VettlyAI Cloud Infrastructure - Fully Automated WordPress Deployment on AWS with Terraform
+# VettlyAI Cloud Infrastructure - Fully Automated WordPress Deployment on AWS with Terraform
 
 Welcome to the VettlyAI infrastructure project — a fully automated, production-ready cloud deployment of WordPress on AWS, built entirely using **Terraform** and modern DevOps best practices. This project showcases my skills in **Infrastructure as Code (IaC)**, **modular Terraform**, **AWS architecture**, **cloud automation**, and **secure VPC design**.
 
